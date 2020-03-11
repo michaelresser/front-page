@@ -1,0 +1,43 @@
+@keyframes bgFrames {
+  100% {
+    background-position: -300% 0;
+  }
+}
+
+@-webkit-keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1vh);
+    transform: translateY(-1vh);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1vh);
+    transform: translateY(-1vh);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
