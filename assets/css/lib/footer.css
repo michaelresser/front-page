@@ -2,7 +2,8 @@
 footer{
   width: 100vw;
   height: auto;
-  display: block;
+  background: black;
+  padding: 1rem;  
 }
 .footer__contact {
   height: 30vh;
@@ -12,49 +13,52 @@ footer{
   color: white;
 }
 .contact__bg{
-  width: 100vw;
-  height: 80%;
-  background: url("images/bg-vignette--mobile.jpg") left/ cover;
+  background: url("/assets/images/bg-vignette--mobile.jpg") left/ cover fixed;
+  animation: bgFrames 800ms steps(8) infinite;
 }
 .contact__container{
   display: flex;
-  flex-flow: row wrap;
-
+  flex-flow: row nowrap;
 }
 .contact__column{
-  max-width: 50vw;
+  width: 50%;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .contact__title{
-
+  text-shadow: 0px 0px 2px 2px black;
 }
 .contact__link{
-  
+  font-size: 3em;
 }
 
 
 
 
 .footer__social-media {
-  margin: 0;
-  margin-bottom: 0.5rem;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
-  flex-direction: row;
+  align-content: center;
 }
 .social-media__list {
+  display: flex;
+  flex-flow: row nowrap;
   
 }
 
 .social-media__item{
-
+  color: white;
+  margin-right: 1rem;
+  
 }
 
 .footer__copyright {
-  margin: 0;
+  text-align:center;
+  color: white;
 }
 .copyright{
-  
+  margin: 0;
 }
