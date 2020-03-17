@@ -6,11 +6,11 @@
     <!-- app.css -->
     <link type='text/css' rel='stylesheet' href="/assets/css/app.css">
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Waypoints.js -->
-    <script src='assets/js/jquery.waypoints.min.js'></script>
-    <script src='/assets/js/waypoints.js'></script>
+    <script src='assets/js/lib/jquery.waypoints.min.js'></script>
+    <script src='/assets/js/lib/waypoints.js'></script>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/9ad1e616cb.js" crossorigin="anonymous">
     </script>
@@ -27,14 +27,14 @@
         <div class="nav-items">
             <a id='home' href="/">
                 <p id='title' class='title ' data-end='_'>MRE Creative</p>
-                <p id='portfolio'>| portfolio</p>
+                <p id='portfolio'>portfolio</p>
             </a>
             <a id='about' href="about.html">about</a>
         </div>
     </nav>
 
     <!-- SPLASH -->
-    <div class='splash'>
+    <header class='splash'>
         <!--GREETING -->
         <h1 class='splash__title fadeIn'>
             My name is Mike Esser & I create awesome things on the internet.
@@ -44,66 +44,81 @@
             <span class='iconify fade-in-up' data-icon="mdi-light:chevron-down" data-inline="false"></span>
         </a>
         <!-- BACKGROUND -->
-        <div class="splash__bg"></div>
-    </div>
+        <div class="splash__bg">
+            <div class="splash__sillhouette"></div>
+        </div>
+    </header>
 
     <!-- WORK -->
-    <div id='work' class='work'>
-        <div class='intro'>
-            <h1 class='title' data-end='_'>WORK</h1>
+    <section id="work" class='work'>
+        <div class='work__intro'>
+            <h1 data-end='_'>WORK</h1>
             <p>As a <strong>user experience designer & web developer</strong> living in the <strong>ATL</strong>, I
                 build dynamic expressions on the web.
-                Its a process of blending & balancing <strong>vision, technology, research, & experimentation.</strong>
+                Its a process of blending & balancing <strong>inspiration, technology, research, &
+                    experimentation.</strong>
             </p>
         </div>
         <!-- PROJECTS -->
-        <div class='projects'>
+        <div class='work__projects projects'>
             <div class='projects__list'>
-                <a class='project'>
-                    <p class="project-title">PROJECT</p>
+                <a class='project__item'>
+                    <p class="project__">CeadrCrestPoint</p>
                 </a>
-                <a class='project'>
-                    <p class="project-title">PROJECT</p>
+                <a class='project__item'>
+                    <p class="project-title">Lost in The Woods</p>
                 </a>
-                <a class='project'>
-                    <p class="project-title">PROJECT</p>
+                <a class='project__item'>
+                    <p class="project-title">Monster of the Week</p>
                 </a>
-                <a class='project'>
+                <a class='project__item'>
                     <p class="project-title">PROJECT</p>
                 </a>
             </div>
         </div>
-        <!-- ARROW -->
-        <a class='next__arrow' href='#call-out'>
-            <span class='iconify arrow-fade-in-up' data-icon="mdi-light:chevron-down" data-inline="false"></span>
-        </a>
-    </div>
-
-    <!-- CALL-OUT -->
-    <div id='call-out'>
-        <div class='call-left'>
-            <p>
-                Looking for a user interface developer to bring your project to life?
-            </p>
-        </div>
-        <div class='call-right'>
-            <a class='link' href="mailto:michaelresser+mrecreative@gmail.com?subject=what's good!">
-                <h1 class='_title'>Let's Chat!</h1>
-            </a>
-        </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
-    <footer>
-        <ul class='links'>
-            <li><a class="iconify" data-icon="simple-icons:github" data-inline="false"></a></li>
-            <li><a class="iconify" data-icon="simple-icons:codepen" data-inline="false"></a></li>
-            <li><a class="iconify" data-icon="simple-icons:linkedin" data-inline="false"></a></li>
-            <li> <a class="iconify" data-icon="simple-icons:codewars" data-inline="false"></a>
-            </li>
-        </ul>
+    <footer class='footer'>
+        <div class="footer__contact contact">
+            <div class="contact__bg">
+                <div class="contact__container">
+                    <div class="contact__column">
+                        <h2 class="contact__title">
+                            Looking for a user interface developer to bring your project to life?
+                            </p>
+                    </div>
+                    <div class='contact__column'>
+                        <a class='contact__link' href="mailto:michaelresser+mrecreative@gmail.com?subject=what's good!">
+                            Let's Chat!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <p class='copyright'> &copy; Michael R. Esser and all other properties, 2019</p>
+        <div class='footer__social-media social-media'>
+            <ul class='social-media__list'>
+                <li class="social-media__item">
+                    <a class="iconify" data-icon="simple-icons:github" data-inline="false"></a>
+                </li>
+                <li class="social-media__item">
+                    <a class="iconify" data-icon="simple-icons:codepen" data-inline="false">
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="iconify" data-icon="simple-icons:linkedin" data-inline="false">
+                    </a>
+                </li>
+                <li class="social-media__item">
+                    <a class="iconify" data-icon="simple-icons:codewars" data-inline="false">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__copyright copyright">
+            <p class='copyright'> &copy; Michael R. Esser and all other properties, 2019</p>
+        </div>
     </footer>
 
     <!-- FOOTER SCRIPTS -->

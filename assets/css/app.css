@@ -5,7 +5,11 @@
 
 /* Custom Global stylesheets */
 @import url('lib/main.css');
-@import url('lib/animations.css');
+@import url('lib/custom_animations.css');
+@import url('lib/animate.css');
 
 /* Custom Section Stylesheets */
+@import url('lib/navbar.css');
 @import url('lib/splash.css');
+@import url('lib/work.css');
+@import url('lib/footer.css');

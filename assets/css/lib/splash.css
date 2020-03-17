@@ -39,6 +39,11 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: url("/assets/bg-vignette--mobile.jpg") left/cover;
+    background: url("/images/bg-vignette--mobile.jpg") left/cover;
     animation: bgFrames 800ms steps(8) infinite;
+  }
+  .splash__sillhouette{
+    width: 90vw;
+    height: auto;
+    background: url("/images/male-profile-face-right.png") center/cover;
   }

@@ -1,0 +1,60 @@
+
+footer{
+  width: 100vw;
+  height: auto;
+  display: block;
+}
+.footer__contact {
+  height: 30vh;
+  background: none;
+  display: flex;
+  flex-flow: row nowrap;
+  color: white;
+}
+.contact__bg{
+  width: 100vw;
+  height: 80%;
+  background: url("images/bg-vignette--mobile.jpg") left/ cover;
+}
+.contact__container{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+.contact__column{
+  max-width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__title{
+
+}
+.contact__link{
+  
+}
+
+
+
+
+.footer__social-media {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.social-media__list {
+  
+}
+
+.social-media__item{
+
+}
+
+.footer__copyright {
+  margin: 0;
+}
+.copyright{
+  
+}
