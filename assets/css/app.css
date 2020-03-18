@@ -1,7 +1,15 @@
+/* 3rd Party stylesheets */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400&display=swap');
-
-@import url('lib/main.css');
 @import url('lib/normalize.css');
 @import url('lib/animate.css');
 
+/* Custom Global stylesheets */
+@import url('lib/main.css');
+@import url('lib/custom_animations.css');
+@import url('lib/animate.css');
 
+/* Custom Section Stylesheets */
+@import url('lib/navbar.css');
+@import url('lib/splash.css');
+@import url('lib/work.css');
+@import url('lib/footer.css');

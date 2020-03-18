@@ -1,0 +1,32 @@
+/* NAVBAR */
+#main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: black;
+    color: white;
+  }
+  .nav-items {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-items > #home {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  #home > #title {
+    margin: 0;
+  }
+  #home > #portfolio {
+    margin-top: 0;
+  }
+  #portfolio,
+  #about {
+    color: #b95b1c;
+    margin: 0;
+    font-weight: bold;
+  }
