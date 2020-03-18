@@ -5,14 +5,16 @@
 This repo is a self-assigned project to review and 'clone' the portfolio site of a UI designer/developer I respect, Taylor Ho. 
 Taylor's OG site & work may be viewed here: www.taylorkmho.com 
 
-I chose his site, because of the creative, intelligent single-page layout, and subtle use of animations and modals to transition between topical areas. 
+I chose his site because of its simple, yet intelligent, single-page layout, and subtle use of animations and modals to transition between topical areas. 
 
 <h3>Stack</h3>
 <ul>
   <li> HTML5 |CSS3 | JS </li>
   <li> Jquery </li>
   <li> Waypoints JS </li>
+  <li> Lost Grid</li>
   <li> </li>
+  
 </ul>
 
 Thanks for Looking! 
