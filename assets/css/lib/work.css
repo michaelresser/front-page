@@ -1,49 +1,50 @@
-/* WORK */
+/* WORK SECTION */
 .work {
-    height: auto;
-    min-height: 50vh;
-    padding: 1em 2em 3em 2em;
-    background-color: black;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .intro {
-    padding-top: 1em;
-  }
-  .title {
-    font-size: 2em;
-    margin: 0;
-  }
-  /* PORTFOLIO */
-  .projects {
-    width: 100%;
-  }
-  .projects__list {
-    width: 100%;
-    margin: 2em 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  
-  /* PROJECT ITEM*/
-  .project {
-    display: flex;
-    min-width: 300px;
-    height: 200px;
-    flex: 300px 1 1;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5em;
-    background: linear-gradient(
-      143deg,
-      rgba(236, 103, 0, 1) 0%,
-      rgba(251, 184, 79, 1) 33%,
-      rgba(250, 165, 52, 1) 66%,
-      rgba(236, 103, 0, 1) 100%
-    );
-    border-radius: 4px;
-  }
+  height: auto;
+  min-height: 50vh;
+  padding: 1em 2em 3em 2em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.work__intro {
+  margin-top: 1em 2em 0 2em;
+}
+.section--title {
+  font-weight: 500;
+  font-size: 2em;
+}
+.section--title::after {
+  content: attr(data-end);
+  color: #f89e00;
+}
+
+/* PROJECTS */
+.work__projects {
+  width: 100%;
+}
+.projects__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.projects__item {
+  min-width: 35vw;
+  min-height: 200px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5em;
+  background: linear-gradient(
+    143deg,
+    rgba(236, 103, 0, 1) 0%,
+    rgba(251, 184, 79, 1) 33%,
+    rgba(250, 165, 52, 1) 66%,
+    rgba(236, 103, 0, 1) 100%
+  );
+  border-radius: 10px;
+}
