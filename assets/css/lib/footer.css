@@ -26,12 +26,13 @@ footer {
   font-size: 2em;
   text-shadow: 0px 2px 5px #333;
   color: #f89e00;
+  margin-bottom: 0;
 }
 .contact__link {
   text-align: center;
   font-size: 5em;
   font-weight: 500;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 .footer__links {
   padding-bottom: 1rem;
