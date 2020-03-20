@@ -6,20 +6,18 @@
     <!-- app.css -->
     <link type='text/css' rel='stylesheet' href="/assets/css/app.css">
     <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- Waypoints.js -->
-    <script src='assets/js/lib/jquery.waypoints.min.js'></script>
-    <script src='/assets/js/lib/waypoints.js'></script>
+    <script src='/assets/js/lib/jquery.waypoints.min.js'></script>
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/9ad1e616cb.js" crossorigin="anonymous">
     </script>
     <!-- Iconify -->
     <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-    <!-- Animations,js -->
-    <script src="assets\js\animations.js"></script>
 
 </head>
+
 
 <body>
     <!-- NAVBAR -->
@@ -29,24 +27,28 @@
                 <h1 id='title' class='title ' data-end='_'>MRE Creative</h1>
                 <h2 id='portfolio'>portfolio</h2>
             </a>
-            <a id='about' href="about.html"><h2>about</h2></a>
+            <a id='about' href="about.html">
+                <h2>about</h2>
+            </a>
         </div>
     </nav>
     <!-- SPLASH -->
     <header class='splash'>
-        <!-- SPLASH IMAGE -->
-        
-        <!--GREETING -->
-        <h1 class='splash__title fadeIn'>
-            My name is Mike Esser & I create awesome things on the internet.
-        </h1>
-        <!-- ARROW -->
-        <a class='splash__arrow' href='#work'>
-            <span class='iconify fade-in-up' data-icon="mdi-light:chevron-down" data-inline="false"></span>
-        </a>
+
+        <div class='splash__container'>
+            <!--GREETING -->
+            <h1 class='splash__title '>
+                My name is Mike Esser & I create awesome things on the internet.
+            </h1>
+            <!-- ARROW -->
+            <a class='splash__arrow' href='#work'>
+                <span class='iconify fade-in-up' data-icon="mdi-light:chevron-down" data-inline="false"></span>
+            </a>
+        </div>
         <!-- BACKGROUND -->
         <div class="splash__bg">
-            <div class="splash__sillhouette"></div>
+            <div class='splash__sillhouette'>
+            </div>
         </div>
     </header>
 
@@ -60,7 +62,7 @@
                     experimentation.</strong>
             </p>
         </div>
-        
+
         <!-- PROJECTS -->
         <div class='work__projects projects'>
             <div class='projects__list'>
@@ -78,9 +80,9 @@
                 </a>
             </div>
         </div>
-    </section>
+        <!-- FOOTER -->
 
-    <!-- FOOTER -->
+    </section>
     <footer class='footer'>
         <div class="footer__contact contact">
             <div class="contact__bg">
@@ -99,33 +101,36 @@
             </div>
         </div>
 
-        <div class='footer__social-media social-media'>
-            <ul class='social-media__list'>
-                <li class="social-media__item">
-                    <a class="iconify" data-icon="simple-icons:github" data-inline="false"></a>
-                </li>
-                <li class="social-media__item">
-                    <a class="iconify" data-icon="simple-icons:codepen" data-inline="false">
-                    </a>
-                </li>
-                <li class="social-media__item">
-                    <a class="iconify" data-icon="simple-icons:linkedin" data-inline="false">
-                    </a>
-                </li>
-                <li class="social-media__item">
-                    <a class="iconify" data-icon="simple-icons:codewars" data-inline="false">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__copyright copyright">
-            <p class='copyright'> &copy; Michael R. Esser and all other properties, 2019</p>
+        <div class='footer__links'>
+            <div class='footer__social-media social-media'>
+                <ul class='social-media__list'>
+                    <li class="social-media__item">
+                        <a class="iconify" data-icon="simple-icons:github" data-inline="false"></a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="iconify" data-icon="simple-icons:codepen" data-inline="false">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="iconify" data-icon="simple-icons:linkedin" data-inline="false">
+                        </a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="iconify" data-icon="simple-icons:codewars" data-inline="false">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright copyright">
+                <p class='copyright'> &copy; Michael R. Esser and all other properties, 2019</p>
+            </div>
         </div>
     </footer>
 
+
     <!-- FOOTER SCRIPTS -->
     <div>
-
+        <script src='/assets/js/app.js' type='module'></script>
     </div>
 
 </body>

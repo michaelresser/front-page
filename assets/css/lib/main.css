@@ -8,6 +8,9 @@ html {
 }
 
 /* ELEMENTS */
+body{
+  background: black;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -15,9 +18,7 @@ a {
 li {
   list-style-type: none;
 }
-/* h1{
-  
-} */
+
 
 /* CLASSES */
 .title {

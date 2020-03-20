@@ -6,7 +6,7 @@
 /* Custom Global stylesheets */
 @import url('lib/main.css');
 @import url('lib/custom_animations.css');
-@import url('lib/animate.css');
+
 
 /* Custom Section Stylesheets */
 @import url('lib/navbar.css');
