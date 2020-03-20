@@ -33,9 +33,13 @@
     animation: arrow-fade-in-up 1.5s infinite;
   }
   .splash__sillhouette{
-    width: 110vw;
-    height: 110vh;
-    
+    position: absolute;
+    bottom: 0px; 
+    left: 0;   
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 1400px;
     background: url("/assets/images/male-profile-face-right.png") 65% / cover ;
   } 
 
