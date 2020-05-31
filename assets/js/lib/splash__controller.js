@@ -46,8 +46,8 @@ export default class SplashController {
     hideSplashContent() {
         this.animSettings.delay = 0
         this.elements.splash.silhouette.animate([
-            { transform: 'scale(1) translateX(-50%)', opacity: 1, offset: 0 },
-            { transform: 'scale(.9) translateX(-50%)', opacity: 0, offset: 1 }
+            { transform: 'scale(1) ', opacity: 1, offset: 0 },
+            { transform: 'scale(.95) ', opacity: 0, offset: 1 }
         ], this.animSettings)
         this.elements.splash.title.animate([
             { opacity: 1, offset: 0 },
@@ -66,8 +66,8 @@ export default class SplashController {
     showSplashContent() {
         this.animSettings.delay = 0
         this.elements.splash.silhouette.animate([
-            { transform: 'scale(.9) translateX(-50%)', opacity: 0, offset: 0 },
-            { transform: 'scale(1) translateX(-50%)', opacity: 1, offset: 1 }
+            { transform: 'scale(.9) ', opacity: 0, offset: 0 },
+            { transform: 'scale(1) ', opacity: 1, offset: 1 }
         ], this.animSettings)
         this.elements.splash.title.animate([
             { opacity: 0, offset: 0 },
