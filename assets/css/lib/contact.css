@@ -1,0 +1,30 @@
+.contact__bg {
+    align-self: flex-end;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: url("/assets/images/bg-vignette--mobile.jpg") left/ cover fixed;
+    animation: bgFrames 800ms steps(8) infinite;
+  }
+/*   .contact__container {
+    display: flex;
+    justify-content: center;
+  } */
+  .contact__column {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 0 350px;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 2px 5px #333;
+  }
+  .contact__title {
+    text-shadow: 0px 2px 5px #333;
+    color: #f89e00;
+  }
+  .contact__link {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 500;
+    
+  }

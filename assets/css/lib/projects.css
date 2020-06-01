@@ -1,0 +1,25 @@
+.work__projects {
+}
+.projects__list {
+  margin: 1em 0;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.projects__item {
+  height: 250px;
+  flex: 0 0 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  background: linear-gradient(
+    143deg,
+    rgba(236, 103, 0, 1) 0%,
+    rgba(251, 184, 79, 1) 33%,
+    rgba(250, 165, 52, 1) 66%,
+    rgba(236, 103, 0, 1) 100%
+  );
+  border-radius: 10px;
+}

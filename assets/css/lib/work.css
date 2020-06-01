@@ -1,19 +1,22 @@
 /* WORK SECTION */
 .work {
-  padding: 1rem;
+  height: 100%;
+  min-height: 50vh;
   background-color: black;
   color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
 }
 .work__intro {
-
+  padding: 0 2em;
 }
-.section--title{
+.work__intro > .title{  
   font-weight: 500;
-  font-size: 2rem;
+  margin-bottom: .5em;
 }
 .section--title::after {
   content: attr(data-end);
@@ -21,28 +24,8 @@
 }
 
 /* PROJECTS */
-.work__projects { 
+
+/* Contact  */
+.work__contact {
+  color: white;
 }
-.projects__list {
-  width: 100vw;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.projects__item {
-  width: 350px;
-  min-height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1em;
-  background: linear-gradient(
-    143deg,
-    rgba(236, 103, 0, 1) 0%,
-    rgba(251, 184, 79, 1) 33%,
-    rgba(250, 165, 52, 1) 66%,
-    rgba(236, 103, 0, 1) 100%
-  );
-  border-radius: 10px;
-}
-@media(maxWidth:)

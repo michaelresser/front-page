@@ -4,7 +4,6 @@ html {
   font-size: 21px;
   letter-spacing: 1.5px;
   scroll-behavior: smooth;
-  font-weight: regular;
 }
 
 /* ELEMENTS */
@@ -13,7 +12,7 @@ body{
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 a {
   text-decoration: none;
