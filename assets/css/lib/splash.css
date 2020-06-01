@@ -21,6 +21,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  font-size: 1.25em;
   font-weight: 500;
   padding: 0 2em;
   text-shadow: 0px 2px 5px #333;
@@ -52,11 +53,10 @@
 .splash__sillhouette {  
   position: absolute;
   bottom: 0;
-  left:-80;
+  left:-10%;
   z-index: -1;
-  width: 100%;
-  max-width: 750px;
-  height: auto;
+  width: auto;
+  height: 100%;
   max-height: 900px;
   background: url("assets/images/male-profile-face-right -750x900.png") top left/ cover;
 }

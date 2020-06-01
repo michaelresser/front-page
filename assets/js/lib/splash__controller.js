@@ -15,7 +15,7 @@ export default class SplashController {
             }
         },
             this.animSettings = animSettings ? animSettings : {
-                duration: 500,
+                duration: 750,
                 easing: 'ease-out',
                 delay: 0,
                 iterations: 1,
@@ -46,8 +46,8 @@ export default class SplashController {
     hideSplashContent() {
         this.animSettings.delay = 0
         this.elements.splash.silhouette.animate([
-            { transform: 'scale(1) ', opacity: 1, offset: 0 },
-            { transform: 'scale(.95) ', opacity: 0, offset: 1 }
+            { transform: 'scale(1)', opacity: 1, offset: 0 },
+            { transform: 'scale(.95)', opacity: 0, offset: 1 }
         ], this.animSettings)
         this.elements.splash.title.animate([
             { opacity: 1, offset: 0 },

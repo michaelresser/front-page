@@ -12,7 +12,4 @@ window.mobileCheck = function() {
     console.log('isMobile: '+ isMobile);
     return isMobile;
 }
-if (window.mobileCheck){
-    $('html').css('font-size', '18px');
-}
 
