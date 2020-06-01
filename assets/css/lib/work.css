@@ -9,6 +9,7 @@
   justify-content: flex-start;
 }
 .work__intro {
+
 }
 .section--title{
   font-weight: 500;
@@ -20,17 +21,16 @@
 }
 
 /* PROJECTS */
-.work__projects {
-  
+.work__projects { 
 }
 .projects__list {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 .projects__item {
-  width: calc(100% - 2rem);
+  width: 350px;
   min-height: 250px;
   display: flex;
   justify-content: center;
@@ -45,3 +45,4 @@
   );
   border-radius: 10px;
 }
+@media(maxWidth:)

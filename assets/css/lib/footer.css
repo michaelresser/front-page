@@ -1,5 +1,6 @@
 footer {
   background: black;
+  align-self: flex-end;
 }
 .footer__contact {
   color: white;

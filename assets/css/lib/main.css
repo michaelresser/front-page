@@ -10,6 +10,10 @@ html {
 /* ELEMENTS */
 body{
   background: black;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 a {
   text-decoration: none;
