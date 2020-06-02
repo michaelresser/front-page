@@ -1,0 +1,44 @@
+.about{
+    color: white;
+    margin: 2em 0;
+    padding: 0 2em;
+    line-height: 2;
+}
+.bio__headline{
+    font-size: 1.2em;
+     
+}
+.bio__quote{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.bio__contact{
+    color: #b95b1c
+}
+.about__skills{
+
+}
+.skills__column{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+}
+.skills__row{
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    /* justify-content: flex-start; */
+    align-content: flex-start;}
+.skills__title{
+    width: 25vw;
+    text-transform: uppercase;
+    color: #b95b1c;
+}
+.skills__list{
+    flex: 1 1 75vw;
+    line-height: 2;
+}
+.skills__list > li{
+    width: auto;
+}

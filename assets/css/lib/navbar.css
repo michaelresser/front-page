@@ -1,9 +1,10 @@
 /* NAVBAR */
 .main-nav {
+  width: 100%;
   background-color: none;  
-  margin: .5rem 2rem 0 2rem;
-}
+  }
 .nav-items {
+  padding: .5em 1em 0 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
