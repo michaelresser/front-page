@@ -21,9 +21,9 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  font-size: 1.25em;
+  font-size: 2em;
   font-weight: 500;
-  padding: 0 2em;
+  padding: 0 2em 3em 2em;
   text-shadow: 0px 2px 5px #333;
 }
 .splash__arrow {
@@ -53,10 +53,31 @@
 .splash__sillhouette {  
   position: absolute;
   bottom: 0;
-  left:-10%;
+  left: 15vw;
   z-index: -1;
   width: auto;
   height: 100%;
-  max-height: 900px;
+  /* max-height: 900px; */
   background: url("assets/images/male-profile-face-right -750x900.png") top left/ cover;
+}
+/* Phone */
+@media screen and (max-width: 480px){
+  .splash__sillhouette{
+    left: auto;
+    right: 0;
+  }
+  .splash__title{
+    font-size: 1em
+  }
+}
+/* tablet */
+@media screen and (max-width: 1000px){
+  .splash__sillhouette{
+    position: fixed;
+    left: auto;
+    right: 0;
+  }
+  .splash__title{
+    font-size: 1.5em
+  }
 }
