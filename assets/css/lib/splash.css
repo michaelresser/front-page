@@ -21,7 +21,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 500;
   padding: 0 2em 3em 2em;
   text-shadow: 0px 2px 5px #333;
@@ -60,22 +60,29 @@
   /* max-height: 900px; */
   background: url("assets/images/male-profile-face-right -750x900.png") top left/ cover;
 }
-/* Phone */
+/* Media Queries */
+/* Phone S/M */
+@media screen and (max-width: 375px){
+  .splash__title{
+    font-size: .5em;
+  }
+}
+/* Phone L*/
 @media screen and (max-width: 480px){
-  .splash__sillhouette{
-    left: auto;
+  .splash__sillhouette{    
+    left: auto;    
     right: 0;
   }
   .splash__title{
-    font-size: 1em
+    font-size: 1em;
   }
 }
-/* tablet */
+/* Tablet */
 @media screen and (max-width: 1000px){
-  .splash__sillhouette{
-    position: fixed;
-    left: auto;
-    right: 0;
+  .splash__sillhouette{  
+    left: auto;  
+    right: 0;    
+    
   }
   .splash__title{
     font-size: 1.5em

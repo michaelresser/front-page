@@ -23,9 +23,11 @@
   color: #f89e00;
 }
 
-/* PROJECTS */
-
-/* Contact  */
-.work__contact {
-  color: white;
+/* Media Queries */
+/* Phone */
+@media screen and (max-width: 480px){
+}
+/* Tablet */
+@media screen and (max-width: 1024px){
+  
 }

@@ -32,6 +32,21 @@ li {
   color: #f89e00;
 }
 
+/* Media Queries */
+/* Phone */
+@media screen and (max-width: 480px){
+  body{
+    font-size: 12px;
+  }
+
+}
+/* Tablet */
+@media screen and (max-width: 1024px){
+  body{
+    font-size: 16px;
+  }
+
+}
 
 
 
