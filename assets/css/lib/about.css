@@ -1,44 +1,56 @@
-.about{
-    color: white;
-    margin: 2em 0;
-    padding: 0 2em;
-    line-height: 2;
+.about {
+  background: none;
+  color: white;
+  margin: 2em 0;
+  padding: 0 2em;
 }
-.bio__headline{
-    font-size: 1.2em;
-     
+.about__bg {
+  position: fixed;
+  z-index: -100;
+  height: 100vh;
+  width: auto;
+  filter: opacity(25%);
 }
-.bio__quote{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+.about__bio {
+  padding-bottom: 2em;
 }
-.bio__contact{
-    color: #b95b1c
+.bio__headline {
+  font-size: 1.2em;
+  font-weight: 500;
 }
-.about__skills{
+/* Bio Quote */
+.bio__quote {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
 
+/* Bio COntact Seciton */
+.bio__contact {
+  color: #b95b1c;
 }
-.skills__column{
-    display: flex;
-    flex-flow: column nowrap;
-    align-content: flex-start;
+.about__skills {
 }
-.skills__row{
-    width: 100vw;
-    display: flex;
-    flex-flow: row;
-    /* justify-content: flex-start; */
-    align-content: flex-start;}
-.skills__title{
-    width: 25vw;
-    text-transform: uppercase;
-    color: #b95b1c;
+.skills__title {
+  max-width: 100%;
 }
-.skills__list{
-    flex: 1 1 75vw;
-    line-height: 2;
+.skills__column {
+  display: flex;
+  flex-flow: column wrap;
 }
-.skills__list > li{
-    width: auto;
+.skills__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.skills__category {
+  text-transform: uppercase;
+  color: #b95b1c;
+}
+.skills__list {
+  width: auto;
+  line-height: 2;
+}
+.skills__list > li {
+  flex: 0 1 250px;
 }
