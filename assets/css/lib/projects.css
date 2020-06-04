@@ -1,11 +1,13 @@
 .work__projects {
+
 }
 .projects__list {
-	margin: 1em 0;
+	/* margin: 1em 0;
 	width: 100vw;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: center;
+	justify-content: center; */
+	margin: 2em auto;
 }
 .projects__item {
   height: 25vh;
