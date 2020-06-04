@@ -1,7 +1,12 @@
+/* Testclasses */
+.border{
+  border: 1px solid white;
+}
+
 /* DOCUMENT */
 html {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 21px;
+  /* font-size: 21px; */
   letter-spacing: 1.5px;
   scroll-behavior: smooth;
 }
