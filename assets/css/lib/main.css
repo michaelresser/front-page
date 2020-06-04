@@ -17,24 +17,26 @@ body{
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  width: 100vw;
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 li {
   list-style-type: none;
 }
 
 
-/* CLASSES */
-.title {
+/* Typography Classes */
+
+.section__title {
   font-size: 2em;
   font-weight: 500;
   letter-spacing: 4px;
 }
-.title::after {
+.section__title::after {
   content: attr(data-end);
   color: #f89e00;
 }
@@ -62,8 +64,6 @@ li {
   body{
     font-size: 16px;
   }
-
 }
-
 
 
