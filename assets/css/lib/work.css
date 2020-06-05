@@ -2,7 +2,7 @@
 .work {
   height: 100%;
   min-height: 50vh;
-  width: 100%;
+  width: 100vw;
   background-color: black;
   text-align: center;
   display: flex;

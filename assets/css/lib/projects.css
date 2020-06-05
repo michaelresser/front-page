@@ -1,11 +1,10 @@
 .work__projects {
 }
 .projects__list {
-  padding: 3em 2em;
+  padding-bottom: 2em;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: auto;
 }
 .projects__item {
   height: 35vw;
@@ -23,11 +22,12 @@
     rgba(236, 103, 0, 1) 100%
   );
   border-radius: 10px;
+  pointer-events: auto; 
 }
 
 @media screen and (max-width: 480px){
 	.projects__list{
-		flex-flow: column nowrap;
+		
 	}
 	.projects__items{
 		width: 90vw;

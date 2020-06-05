@@ -1,4 +1,7 @@
-.contact__bg {
+.contact{
+  width: 100vw;
+}
+.contact__bg {    
     align-self: flex-end;
     display: flex;
     flex-flow: row wrap;
