@@ -1,7 +1,7 @@
 .footer {
-  width: 100vw
+  width: 100vw;
   background: black;
-  align-self: center;
+  
 }
 .footer__links {
   padding-bottom: 1rem;

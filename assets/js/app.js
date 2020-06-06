@@ -1,9 +1,11 @@
 import SplashController from './lib/splash__controller.js';
+import MobileViewport from './lib/mobile_viewport.js';
 // app.js test
 console.log('test')
-  
+//   initialize mobileViewport
+const setMMobileViewport = new MobileViewport()/* ;
 // initialize splash control animation function
-let splashController = new SplashController();
+let splashController = new SplashController(); */
 
 /* MobileCheck true/false */
 window.mobileCheck = function() {

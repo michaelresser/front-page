@@ -8,7 +8,7 @@ html {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   /* font-size: 21px; */
   letter-spacing: 1.5px;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 
 /* ELEMENTS */
@@ -18,7 +18,6 @@ body{
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
 }
 a {
   text-decoration: none;

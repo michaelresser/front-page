@@ -4,18 +4,9 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: flex-start;
-}
-.splash__container {
-  position: relative;
-  width: 100vw;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content:flex-start;
-  align-content: center;  
   color: white;
 }
+
 .splash__title {
   display: flex;
   justify-content: center;
@@ -23,19 +14,15 @@
   flex-grow: 1;
   font-size: 1.75em;
   font-weight: 500;
-  padding: 0 2em 3em 2em;
+  padding: 0 2em;
   text-shadow: 0px 2px 5px #333;
 }
 .splash__arrow {
-  align-self: center;
-  margin: 0;
-  position: absolute;
-  bottom: .5em;
   display: flex;
+  align-self: center;
   flex-direction: row;
   justify-content: center;
-  flex: 0 0 100vw;
-  font-size: 3em;
+  font-size: 6em;
   line-height: 0.5em;
   filter: drop-shadow(0px 2px 5px #333);
   animation: arrow-fade-in-up 1.5s infinite;
@@ -49,14 +36,13 @@
   height: 100vh;
   background: url("/assets/images/bg-vignette--mobile.jpg") center/cover;
   animation: bgFrames 800ms steps(8) infinite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .splash__sillhouette {  
-  position: absolute;
-  bottom: 0;
-  left: 15vw;
-  z-index: -1;
-  width: auto;
-  height: 100%;
+  width:auto;
+  height: 90vh;
   /* max-height: 900px; */
   background: url("assets/images/male-profile-face-right -750x900.png") top left/ cover;
 }
@@ -68,23 +54,19 @@
   }
 }
 /* Phone L*/
-@media screen and (max-width: 480px){
-  .splash__sillhouette{    
-    left: auto;    
-    right: 0;
+@media screen and (max-width: 600px){
+  .splash__bg{    
+    overflow-x: hidden;
+    justify-content: flex-end;  
   }
   .splash__title{
-    font-size: 1em;
+    font-size: .8em;
   }
 }
+
 /* Tablet */
 @media screen and (max-width: 1000px){
-  .splash__sillhouette{  
-    left: auto;  
-    right: 0;    
-    
-  }
   .splash__title{
-    font-size: 1.5em
+    font-size: 1.5em;
   }
 }
