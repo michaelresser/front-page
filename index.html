@@ -64,19 +64,28 @@
     <!-- PROJECTS -->
     <div class='work__projects projects'>
       <div class='projects__list'>
-        <a class='projects__item'>
-          <p class="projects__title">CeadrCrestPoint</p>
-        </a>
-        <a class='projects__item'>
+        <div class='projects__item' data-content='{"project_name": "CedarCrestPoint"}'>
+          <p class="projects__title">CedarCrestPoint</p>
+        </div>
+        <a class='projects__item' data-content='{"project_name": "Lost in the Woods"}'>
           <p class="projects__title">Lost in The Woods</p>
         </a>
-        <a class='projects__item'>
+        <a class='projects__item' data-content='{"project_name": "Monster of the Week"}'>
           <p class="projects__title">Monster of the Week</p>
         </a>
-        <a class='projects__item'>
-          <p class="projects__title">PROJECT</p>
+        <a class='projects__item' data-content='{"project_name": "PT Buddy"}'>
+          <p class="projects__title">PT Buddy</p>
         </a>
       </div>
+      <div class='projects__modal modal'>
+        <div class="modal__content">
+          <div class='modal__info'>
+            <span class="iconify modal__close" data-icon="mdi:close" data-inline="false"></span>
+            <h1 class='modal__title'>Modal Title</h1>
+          </div>
+        </div>
+      </div>
+
 
       <!-- Contact Section -->
       <div class="work__contact contact">
@@ -97,6 +106,7 @@
       </div>
     </div>
   </section>
+
   <!-- FOOTER -->
   <footer class='footer'>
     <div class='footer__links'>

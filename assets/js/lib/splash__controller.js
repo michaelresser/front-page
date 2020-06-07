@@ -41,7 +41,7 @@ export default class SplashController {
             offset: '90%'
         })
     }
-    
+
     // Show Hide Methods written using WebAnimationsAPI syntax
     hideSplashContent() {
         this.animSettings.delay = 0

@@ -1,11 +1,9 @@
 import SplashController from './lib/splash__controller.js';
-import MobileViewport from './lib/mobile_viewport.js';
-// app.js test
-console.log('test')
-//   initialize mobileViewport
-const setMMobileViewport = new MobileViewport()/* ;
+// import ProjectsModalController from './lib/projects_modal_controller.js';
+
+
 // initialize splash control animation function
-let splashController = new SplashController(); */
+let splashController = new SplashController();
 
 /* MobileCheck true/false */
 window.mobileCheck = function () {
@@ -15,3 +13,33 @@ window.mobileCheck = function () {
   return isMobile;
 }
 
+/* project__modal controllers */
+// const projectsModalController = new ProjectsModalController();
+
+const handleProjectModal = (e) => {
+  const project = e.target;
+  const elements = {
+    modal: document.querySelector('.projects__modal'),
+    modal__close: document.querySelector('.modal__close'),
+    modal__name: document.querySelector('.modal__title'),
+  }
+  const data = JSON.parse(project.getAttribute('data-content'));
+  
+  console.log(elements);
+  console.log(data);
+
+  // open modal
+  elements.modal.style.display = 'block';
+  // close modal
+  elements.modal.addEventListener('click', () => elements.modal.style.display = 'none');
+// customize modal info based on ,project data
+  elements.modal__name.innerHTML = data.project_name;
+
+}//end handleProjectModal
+
+
+// add clcik handlers to all .project__item elements 
+const projects__list = document.querySelector('.projects__list')
+
+const projects__items = projects__list.querySelectorAll('.projects__item');
+projects__items.forEach(item => item.addEventListener('click', (e) => handleProjectModal(e)));
