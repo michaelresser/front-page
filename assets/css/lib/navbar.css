@@ -5,7 +5,7 @@
   background-color: none;  
   }
 .nav-items {
-  padding: .5em 1em 0 1em;
+  padding: .5em 2em 0 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
