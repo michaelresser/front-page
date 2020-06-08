@@ -21,19 +21,23 @@ const handleProjectModal = (e) => {
   const elements = {
     modal: document.querySelector('.projects__modal'),
     modal__close: document.querySelector('.modal__close'),
-    modal__name: document.querySelector('.modal__title'),
+    title: document.querySelector('.showcase__title'),
+    images: document.querySelector('.showcase__img'),
+    description: document.querySelector('.showcase__description'),
   }
   const data = JSON.parse(project.getAttribute('data-content'));
-  
+
   console.log(elements);
   console.log(data);
 
   // open modal
-  elements.modal.style.display = 'block';
+  elements.modal.style.top = 0;
   // close modal
-  elements.modal.addEventListener('click', () => elements.modal.style.display = 'none');
-// customize modal info based on ,project data
-  elements.modal__name.innerHTML = data.project_name;
+  elements.modal.addEventListener('click', () => elements.modal.style.top = "100vh");
+  //customize modal info based on ,project data
+  elements.title.innerHTML = data.title;
+  elements.description.innerHTML = data.description;
+  elements.images.setAttribute('src', data.images[0].src);
 
 }//end handleProjectModal
 
