@@ -29,9 +29,9 @@ const handleProjectModal = (e) => {
   console.log(data);
 
   // open modal
-  elements.modal.style.display = 'block';
+  elements.modal.style.top = '0';
   // close modal
-  elements.modal.addEventListener('click', () => elements.modal.style.display = 'none');
+  elements.modal.addEventListener('click', () => elements.modal.style.top = '100vh');
 // customize modal info based on ,project data
   elements.modal__name.innerHTML = data.project_name;
 
