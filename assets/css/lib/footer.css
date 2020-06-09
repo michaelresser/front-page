@@ -1,7 +1,6 @@
 .footer {
   width: 100vw;
-  background: black;
-  
+  background: black;  
 }
 .footer__links {
   padding-bottom: 1rem;
@@ -25,6 +24,4 @@
 .footer__copyright {
   text-align: center;
   color: white;
-}
-.copyright {
 }

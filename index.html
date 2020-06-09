@@ -64,46 +64,57 @@
     <!-- PROJECTS -->
     <div class='work__projects projects'>
       <div class='projects__list'>
-        <div class='projects__item' data-content='{"project_name": "CedarCrestPoint"}'>
+        <div class='projects__item'
+          data-content='{"title": "CedarCrestPoint", "description": "Description goes here! Lorem bla blah...",  "images":[{"src":"/assets/images/cedarcrest-point/1.jpg"}], "site_url": "http://cedarcrestpoint.epizy.com"}'>
           <p class="projects__title">CedarCrestPoint</p>
         </div>
-        <a class='projects__item' data-content='{"project_name": "Lost in the Woods"}'>
+        <a class='projects__item'
+          data-content='{"title": "Lost in the Woods", "description": "Description goes here! Lorem bla blah...", "images":[{"src": "/assets/images/lost-in-the-woods/1.jpg"}], "site_url": "http://lost-in-the-woods.netlify.app"}'>
           <p class="projects__title">Lost in The Woods</p>
         </a>
-        <a class='projects__item' data-content='{"project_name": "Monster of the Week"}'>
-          <p class="projects__title">Monster of the Week</p>
-        </a>
-        <a class='projects__item' data-content='{"project_name": "PT Buddy"}'>
+        <a class='projects__item'
+          data-content='{"title": "PT Buddy", "description": "Description goes here! Lorem bla blah...", "images":[{"src": "/assets/images/pt-buddy/1.jpg"}], "site_url":"http://pt-buddy.netlify.app"}'>
           <p class="projects__title">PT Buddy</p>
         </a>
       </div>
       <div class='projects__modal modal'>
         <div class="modal__content">
-          <div class='modal__info'>
-            <span class="iconify modal__close" data-icon="mdi:close" data-inline="false"></span>
-            <h1 class='modal__title'>Modal Title</h1>
+          <div class='showcase'>
+            <div class='showcase__images'>
+              <img class='showcase__img' src=''>
+              <!-- dynamically create image showcase with Wallop-->
+            </div>
+            <div class="showcase__info">
+              <h1 class='showcase__title'>Modal Title</h1>
+              <p class='showcase__description'></p>
+              <div class='showcase__links'>
+                <button><a class='view__site' target='blank' href='/'>View Site</a></button>
+                <a class='' href='/'><span class='iconify' data-icon=''></span></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
 
 
-      <!-- Contact Section -->
-      <div class="work__contact contact">
-        <div class="contact__bg">
-          <div class="contact__column">
-            <h2 class="contact__title">
-              Looking for a user interface developer to bring your project to life?
-            </h2>
-          </div>
-          <div class='contact__column'>
-            <a class='contact__link' href="mailto:michaelresser+mrecreative@gmail.com?subject=what's good!">
-              <h1>
-                Let's Chat!
-              </h1>
-            </a>
-          </div>
+    <!-- Contact Section -->
+    <div class="work__contact contact">
+      <div class="contact__bg">
+        <div class="contact__column">
+          <h2 class="contact__title">
+            Looking for a user interface developer to bring your project to life?
+          </h2>
+        </div>
+        <div class='contact__column'>
+          <a class='contact__link' href="mailto:michaelresser+mrecreative@gmail.com?subject=what's good!">
+            <h1>
+              Let's Chat!
+            </h1>
+          </a>
         </div>
       </div>
+    </div>
     </div>
   </section>
 

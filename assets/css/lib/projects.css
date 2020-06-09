@@ -1,8 +1,3 @@
-.work__projects {
-}
-.projects{
-  
-}
 .projects__list {  
   display: flex;
   flex-flow: row wrap;
@@ -29,6 +24,7 @@
   pointer-events: auto; 
 }
 
+<<<<<<< HEAD
 .projects__modal{
   z-index: 10;
   position: fixed;
@@ -60,6 +56,8 @@
   justify-content: center;
   align-items: center;
 }
+=======
+>>>>>>> projectModal
 
 @media screen and (max-width: 480px){
 	.projects__items{
