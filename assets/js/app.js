@@ -24,7 +24,7 @@ const handleProjectModal = (e) => {
     modal: document.querySelector('.projects__modal'),
     modal__close: document.querySelector('.modal__close'),
     title: document.querySelector('.showcase__title'),
-    images: document.querySelector('.showcase__img'),
+    showcase__img: document.querySelector('.showcase__img'),
     description: document.querySelector('.showcase__description'),
     view__site:  document.querySelector('.view__site')
   }
@@ -39,7 +39,7 @@ const handleProjectModal = (e) => {
   //customize modal info based on ,project data
   elements.title.innerHTML = data.title;
   elements.description.innerHTML = data.description;
-  elements.images.setAttribute('src', data.images[0].src);
+  elements.showcase__img.setAttribute('style', `background: url(${data.images[0].src}) center / cover`);
   elements.view__site.setAttribute('href', data.site_url)
 }//end handleProjectModal
 

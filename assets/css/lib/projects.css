@@ -24,41 +24,6 @@
   pointer-events: auto; 
 }
 
-<<<<<<< HEAD
-.projects__modal{
-  z-index: 10;
-  position: fixed;
-  top: 100vh;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color:rgba(0, 0, 0, 0.75);     
-}
-.modal__content{
-  position:relative;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.modal__close{
-  position: absolute;
-  top: 0;
-  right:0;
-  margin:.5em;
-  font-size: 2em;
-}
-.modal__info{
-  width: 75%;
-  height: 75%;
-  background: rgba(0,0,0,1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-=======
->>>>>>> projectModal
-
 @media screen and (max-width: 480px){
 	.projects__items{
 		width: 90%;
