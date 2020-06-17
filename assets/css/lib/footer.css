@@ -1,11 +1,9 @@
 .footer {
-  width: 100vw;
+  width: 100%;
   background: black;
   
 }
-.footer__links {
-  padding-bottom: 1rem;
-}
+
 .footer__social-media {
   display: flex;
   flex-flow: row nowrap;
