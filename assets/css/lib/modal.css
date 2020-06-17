@@ -1,0 +1,89 @@
+.projects__modal {
+  z-index: 10;
+  position: fixed;
+  top: 100vh;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal__content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.showcase {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 .5em .5em #000000;
+  width: 90%;
+}
+.showcase__img {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;   
+  flex :1 0 600px;
+  height: 400px; 
+}
+
+.showcase__info {  
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  flex: 1 0 400px;
+  padding: 2em 1em;
+  background-color: #000000;
+  border-top: 1em solid #f89e00;
+}
+.showcase__info > * {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1em;
+}
+.showcase__links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2em;
+}
+.showcase__links > button {
+  padding: 0.5em 1em;
+  background-color: #f89e00;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 500px) {
+}
+
+/* L Phone + STablet  */
+@media screen and (max-width: 600px) {
+}
+/* Large Tablet */
+/* @media screen and (max-width: 1000px) {
+  .modal__content {
+    justify-content: center;
+  }
+  .showcase {
+    max-width: 800px;
+    height: 80vh;
+  }
+  .showcase__images {
+    flex: 1 1 100%;
+  }
+  .showcase__images {
+  }
+  .showcase__info {
+    padding-top: 2em;
+    flex: 1 1 100%;
+    width: 100%;
+    max-height: 80vh;
+  }
+} */

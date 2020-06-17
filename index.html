@@ -1,24 +1,22 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-    <title>Practice Front Page </title>
-    <!-- app.css -->
-    <link type='text/css' rel='stylesheet' href="/assets/css/app.css">
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <!-- Waypoints.js -->
-    <script src='/assets/js/lib/jquery.waypoints.min.js'></script>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/9ad1e616cb.js" crossorigin="anonymous"></script>
-    <!-- Iconify -->
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!DOCTYPE html>
+  <title>Practice Front Page </title>
+  <!-- app.css -->
+  <link type='text/css' rel='stylesheet' href="/assets/css/app.css">
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <!-- Waypoints.js -->
+  <script src='/assets/js/lib/jquery.waypoints.min.js'></script>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/9ad1e616cb.js" crossorigin="anonymous"></script>
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
 </head>
-
-
+  
 <body>
     <!-- SPLASH -->
     <header>
@@ -63,74 +61,92 @@
                     experimentation.</strong>
             </p>
         </div>
-        <!-- PROJECTS -->
-        <div class='work__projects projects'>
-            <div class='projects__list'>
-                <a class='projects__item'>
-                    <p class="projects__title">CeadrCrestPoint</p>
-                </a>
-                <a class='projects__item'>
-                    <p class="projects__title">Lost in The Woods</p>
-                </a>
-                <a class='projects__item'>
-                    <p class="projects__title">Monster of the Week</p>
-                </a>
-                <a class='projects__item'>
-                    <p class="projects__title">PROJECT</p>
-                </a>
-            </div>
+    <!-- PROJECTS -->
+    <div class='work__projects projects'>
+      <div class='projects__list'>
+        <div class='projects__item'
+          data-content='{"title": "CedarCrestPoint", "description": "Description goes here! Lorem bla blah...",  "images":[{"src":"/assets/images/cedarcrest-point/1.jpg"}], "site_url": "http://cedarcrestpoint.epizy.com"}'>
+          <p class="projects__title">CedarCrestPoint</p>
 
-            <!-- Contact Section -->
-            <div class="work__contact contact">
-                <div class="contact__bg">
-                    <div class="contact__column">
-                        <h2 class="contact__title">
-                            Looking for a user interface developer to bring your project to life?
-                        </h2>
-                    </div>
-                    <div class='contact__column'>
-                        <a class='contact__link' href="mailto:michaelresser+mrecreative@gmail.com?subject=what's good!">
-                            <h1>
-                                Let's Chat!
-                            </h1>
-                        </a>
-                    </div>
-                </div>
+        </div>
+        <a class='projects__item'
+          data-content='{"title": "Lost in the Woods", "description": "Description goes here! Lorem bla blah...", "images":[{"src": "/assets/images/lost-in-the-woods/1.jpg"}], "site_url": "http://lost-in-the-woods.netlify.app"}'>
+          <p class="projects__title">Lost in The Woods</p>
+        </a>
+        <a class='projects__item'
+          data-content='{"title": "PT Buddy", "description": "Description goes here! Lorem bla blah...", "images":[{"src": "/assets/images/pt-buddy/1.jpg"}], "site_url":"http://pt-buddy.netlify.app"}'>
+          <p class="projects__title">PT Buddy</p>
+        </a>
+      </div>
+      <div class='projects__modal modal'>
+        <div class="modal__content">
+          <div class='showcase'>
+            <div class='showcase__img' style='background: url(/assets/images/pt-buddy/1.jpg) center / cover'></div>
+           <div class="showcase__info">
+              <h1 class='showcase__title'>Modal Title</h1>
+              <p class='showcase__description'></p>
+              <div class='showcase__links'>
+                <button><a class='view__site' target='blank' href='/'>View Site</a></button>
+                <a class='' href='/'><span class='iconify' data-icon=''></span></a>
+              </div>
             </div>
         </div>
-    </section>
-    <!-- FOOTER -->
-    <footer class='footer'>
-        <div class='footer__links'>
-            <div class='footer__social-media social-media'>
-                <ul class='social-media__list'>
-                    <li class="social-media__item">
-                        <a class="iconify" data-icon="simple-icons:github" data-inline="false"></a>
-                    </li>
-                    <li class="social-media__item">
-                        <a class="iconify" data-icon="simple-icons:codepen" data-inline="false">
-                        </a>
-                    </li>
-                    <li class="social-media__item">
-                        <a class="iconify" data-icon="simple-icons:linkedin" data-inline="false">
-                        </a>
-                    </li>
-                    <li class="social-media__item">
-                        <a class="iconify" data-icon="simple-icons:codewars" data-inline="false"
-                            href="https://www.codewars.com/users/itsmastermike">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__copyright copyright">
-                <p class='copyright'> &copy; Michael R. Esser and all other properties, 2019</p>
-            </div>
+      </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="work__contact contact">
+      <div class="contact__bg">
+        <div class="contact__column">
+          <h2 class="contact__title">
+            Looking for a user interface developer to bring your project to life?
+          </h2>
         </div>
-    </footer>
+        <div class='contact__column'>
+          <a class='contact__link' href="mailto:michaelresser+mrecreative@gmail.com?subject=what's good!">
+            <h1>
+              Let's Chat!
+            </h1>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class='footer'>
+    <div class='footer__links'>
+      <div class='footer__social-media social-media'>
+        <ul class='social-media__list'>
+          <li class="social-media__item">
+            <a class="iconify" data-icon="simple-icons:github" data-inline="false"></a>
+          </li>
+          <li class="social-media__item">
+            <a class="iconify" data-icon="simple-icons:codepen" data-inline="false">
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="iconify" data-icon="simple-icons:linkedin" data-inline="false">
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="iconify" data-icon="simple-icons:codewars" data-inline="false"
+              href="https://www.codewars.com/users/itsmastermike">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <p class='copyright'> &copy; Michael R. Esser and all other properties, 2019</p>
+      </div>
+    </div>
+  </footer>
 
 
-    <!-- SCRIPTS -->
-    <script src='/assets/js/app.js' type='module'></script>
+  <!-- SCRIPTS -->
+  <script src='/assets/js/app.js' type='module'></script>
 
 
 </body>

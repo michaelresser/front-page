@@ -1,7 +1,6 @@
 .footer {
   width: 100%;
   background: black;
-  
 }
 
 .footer__social-media {
@@ -23,6 +22,4 @@
 .footer__copyright {
   text-align: center;
   color: white;
-}
-.copyright {
 }
