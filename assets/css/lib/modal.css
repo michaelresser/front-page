@@ -8,9 +8,7 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 .modal__content {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -20,27 +18,27 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  align-items: stretch;
+  margin: 1em;
+}
+.showcase__images {
+  justify-content: center;
   align-items: center;
-  box-shadow: 0 0 .5em .5em #000000;
-  width: 90%;
+  border: 1px solid white;
+  width: 600px;
 }
 .showcase__img {
   display: flex;
-  flex-direction: center;
-  justify-content: center;   
-  flex :1 0 600px;
-  height: 400px; 
+  width: 600px;
 }
 
-.showcase__info {  
+.showcase__info {
   display: flex;
   align-self: stretch;
   flex-direction: column;
-  justify-content: center;
-  align-content: flex-start;
-  flex: 1 0 400px;
-  padding: 2em 1em;
-  background-color: #000000;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0 0 2em;
   border-top: 1em solid #f89e00;
 }
 .showcase__info > * {
@@ -48,6 +46,9 @@
   margin: 0;
   padding: 0;
   margin-bottom: 1em;
+}
+.showcase__title {
+  margin-top: 1em;
 }
 .showcase__links {
   display: flex;
@@ -63,27 +64,19 @@
 @media screen and (max-width: 500px) {
 }
 
-/* L Phone + STablet  */
-@media screen and (max-width: 600px) {
-}
-/* Large Tablet */
-/* @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1080px) {
   .modal__content {
-    justify-content: center;
+    align-items: center;
   }
   .showcase {
-    max-width: 800px;
-    height: 80vh;
-  }
-  .showcase__images {
-    flex: 1 1 100%;
-  }
-  .showcase__images {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 90vw;
   }
   .showcase__info {
-    padding-top: 2em;
-    flex: 1 1 100%;
-    width: 100%;
-    max-height: 80vh;
+    padding: 1em;
+    width: 600px;
   }
-} */
+}
