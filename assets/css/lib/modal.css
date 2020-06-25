@@ -3,16 +3,19 @@
   position: fixed;
   top: 100vh;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
 }
 .modal__content {
+  position: relative;
+  max-width: 100%;
   height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2em;
 }
 .showcase {
   display: flex;
@@ -24,21 +27,23 @@
 .showcase__images {
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
-  width: 600px;
+  box-shadow: 0 0 .5em .5em #000000;  
 }
 .showcase__img {
   display: flex;
-  width: 600px;
+  flex-direction: column;     
+  width: 100%;   
 }
 
 .showcase__info {
   display: flex;
   align-self: stretch;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 0 0 0 2em;
+  justify-content: center;
+  align-content: flex-start;
+  width: 100%;
+  padding: 2em 1em;
+  background-color: #000000;
   border-top: 1em solid #f89e00;
 }
 .showcase__info > * {
