@@ -14,7 +14,9 @@ window.mobileCheck = function () {
   return isMobile;
 }
 
-fixMobile100vh();
+if (window.mobileCheck){
+  fixMobile100vh();
+}
 
 /* project__modal controllers */
 // const projectsModalController = new ProjectsModalController();
@@ -46,7 +48,11 @@ const handleProjectModal = (e) => {
 
 
 // add onclick handlers to all .project__item elements 
-document.addEventListener('load', () => {
-  document.querySelectorAll('.projects__item').forEach(item => item.addEventListener('click', (e) => handleProjectModal(e)));
-});
+  const projects__list = document.querySelector('.projects__list');
+  console.log(typeof projects__list);
+  projects__list.querySelectorAll('.projects__item').forEach(item => item.addEventListener('click', (e) => {
+    console.log('handleProjectModal');
+    handleProjectModal(e)
+  }));
+
 

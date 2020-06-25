@@ -41,7 +41,6 @@
 .splash__sillhouette {  
   width:auto;
   height: 90%;
-  /* max-height: 900px; */
   background: url("assets/images/male-profile-face-right -750x900.png") top left/ cover;
 }
 /* Media Queries */
