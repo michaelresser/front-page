@@ -13,9 +13,9 @@ window.mobileCheck = function () {
   console.log('isMobile: ' + isMobile);
   return isMobile;
 }
-if (window.mobileCheck) {
-  fixMobile100vh();
-}
+
+fixMobile100vh();
+
 /* project__modal controllers */
 // const projectsModalController = new ProjectsModalController();
 
