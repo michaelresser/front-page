@@ -8,7 +8,8 @@ html {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   /* font-size: 21px; */
   letter-spacing: 1.5px;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth;
+  width: 100%;  
 }
 
 /* ELEMENTS */
@@ -27,7 +28,12 @@ li {
   list-style-type: none;
 }
 
-
+/* Layout classes */
+.full-height{
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;  
+}
 /* Typography Classes */
 
 .section__title {

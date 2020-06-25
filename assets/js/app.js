@@ -1,4 +1,5 @@
 import SplashController from './lib/splash__controller.js';
+import fixMobile100vh from './lib/fixMobile100vh.js';
 // import ProjectsModalController from './lib/projects_modal_controller.js';
 
 
@@ -12,7 +13,9 @@ window.mobileCheck = function () {
   console.log('isMobile: ' + isMobile);
   return isMobile;
 }
-
+if (window.mobileCheck){
+  fixMobile100vh();
+}
 /* project__modal controllers */
 // const projectsModalController = new ProjectsModalController();
 
