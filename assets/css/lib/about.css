@@ -1,56 +1,57 @@
-.about {
-  background: none;
-  color: white;
-  margin: 2em 0;
+.about{
   padding: 0 2em;
 }
 .about__bg {
-  position: fixed;
-  z-index: -100;
-  height: 100vh;
-  width: auto;
-  filter: opacity(25%);
+	position: fixed;
+	z-index: -100;
+	height: 100%;
+	width: auto;
+	filter: opacity(25%);
 }
 .about__bio {
-  padding-bottom: 2em;
+	margin-bottom: 2em;
 }
 .bio__headline {
-  font-size: 1.2em;
-  font-weight: 500;
+	font-size: 1.2em;
+	font-weight: 500;
 }
 /* Bio Quote */
 .bio__quote {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
 
 /* Bio COntact Seciton */
 .bio__contact {
-  color: #b95b1c;
+	color: #b95b1c;
 }
+
+/* SKILLS */
 .about__skills {
 }
 .skills__title {
-  max-width: 100%;
 }
 .skills__column {
-  display: flex;
-  flex-flow: column wrap;
+	display: flex;
+	flex-direction: column;
 }
 .skills__row {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.skills__row > h3, p {	
+	
 }
 .skills__category {
-  text-transform: uppercase;
-  color: #b95b1c;
+	display: flex;
+	width:auto;
+	text-transform: uppercase;
+	color: #b95b1c;
 }
 .skills__list {
-  width: auto;
-  line-height: 2;
-}
-.skills__list > li {
-  flex: 0 1 250px;
+	display: flex;
+	
+	line-height: 2;
 }
