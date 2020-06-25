@@ -1,9 +1,10 @@
 /* 100vh on mobile fix */
 
-export default fixMobile100vh  = () => {
+const fixMobile100vh = () => {
     window.addEventListener('resize', () => {
         // We execute the same script as before
         let vh = window.innerHeight * 0.01;
         document.documentElement.style.setProperty('--vh', `${vh}px`);
       });
 }  
+export default fixMobile100vh;

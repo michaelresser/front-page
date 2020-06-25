@@ -13,7 +13,7 @@ window.mobileCheck = function () {
   console.log('isMobile: ' + isMobile);
   return isMobile;
 }
-if (window.mobileCheck){
+if (window.mobileCheck) {
   fixMobile100vh();
 }
 /* project__modal controllers */
@@ -27,7 +27,7 @@ const handleProjectModal = (e) => {
     title: document.querySelector('.showcase__title'),
     showcase__img: document.querySelector('.showcase__img'),
     description: document.querySelector('.showcase__description'),
-    view__site:  document.querySelector('.view__site')
+    view__site: document.querySelector('.view__site')
   }
   const data = JSON.parse(project.getAttribute('data-content'));
   console.log(elements);
@@ -42,11 +42,11 @@ const handleProjectModal = (e) => {
   elements.description.innerHTML = data.description;
   elements.showcase__img.setAttribute('style', `background: url(${data.images[0].src}) center / cover`);
   elements.view__site.setAttribute('href', data.site_url)
-}//end handleProjectModal
+}
 
 
-// add clcik handlers to all .project__item elements 
-const projects__list = document.querySelector('.projects__list')
+// add onclick handlers to all .project__item elements 
+document.addEventListener('load', () => {
+  document.querySelectorAll('.projects__item').forEach(item => item.addEventListener('click', (e) => handleProjectModal(e)));
+});
 
-const projects__items = projects__list.querySelectorAll('.projects__item');
-projects__items.forEach(item => item.addEventListener('click', (e) => handleProjectModal(e)));

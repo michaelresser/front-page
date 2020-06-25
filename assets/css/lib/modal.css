@@ -1,7 +1,7 @@
 .projects__modal {
   z-index: 10;
   position: fixed;
-  top: 100vh;
+  top: 100%;
   left: 0;
   height: 100%;
   width: 100%;
@@ -19,7 +19,7 @@
 }
 .showcase {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   align-items: stretch;
   margin: 1em;
