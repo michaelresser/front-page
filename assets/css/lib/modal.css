@@ -3,18 +3,19 @@
   position: fixed;
   top: 100vh;
   left: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.75);
 }
 .modal__content {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  max-width: 100%;
+  height: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2em;
 }
 .showcase {
   display: flex;
@@ -22,14 +23,14 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 .5em .5em #000000;
-  width: 90%;
+  
+  
 }
 .showcase__img {
   display: flex;
-  flex-direction: center;
-  justify-content: center;   
-  flex :1 0 600px;
-  height: 400px; 
+  flex-direction: column;
+     
+  width: 100%;   
 }
 
 .showcase__info {  
@@ -38,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
-  flex: 1 0 400px;
+  width: 100%;
   padding: 2em 1em;
   background-color: #000000;
   border-top: 1em solid #f89e00;

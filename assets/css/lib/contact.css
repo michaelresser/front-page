@@ -1,35 +1,33 @@
-.contact{
-  
+.contact {
+  max-width: 100%;
 }
-.contact__bg {     
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background: url("/assets/images/bg-vignette--mobile.jpg") left/ cover fixed;
-    animation: bgFrames 800ms steps(8) infinite;
-    width: 100%;
-  }
-  .contact__container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-  .contact__column {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 350px;
-    text-shadow: 0px 2px 5px #333;
-    padding: 1em;
-  }
-  .contact__title {
-    text-shadow: 0px 2px 5px #333;
-    color: #f89e00;
-  }
-  .contact__link {
-    font-size: 2em;
-    text-align: center;
-    font-weight: 500;
-    
-  }
+.contact__bg {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background: url("/assets/images/bg-vignette--mobile.jpg") left/ cover fixed;
+  animation: bgFrames 800ms steps(8) infinite;
+}
+.contact__container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.contact__column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 350px;
+  text-shadow: 0px 2px 5px #333;
+  padding: 1em;
+}
+.contact__title {
+  text-shadow: 0px 2px 5px #333;
+  color: #f89e00;
+}
+.contact__link {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 500;
+}

@@ -1,38 +1,36 @@
-/* DOCUMENT */
-html {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
-  /* font-size: 21px; */
-  letter-spacing: 1.5px;
-  scroll-behavior: smooth;  
-  min-width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-body{
-  background: var(--color__bg);
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 100%;
-}
-
 /* VARIABLES */
 :root{
   --color__bg: #000000;
   --color__primary:  #f89e00;
 }
 
-/* LAYOUT  */
-section{
-  margin-top: 2em;
-}
-.page {
+/* DOCUMENT */
+html {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 1.5px;
+  scroll-behavior: smooth;  
+  
+  box-sizing: border-box;
   background: none;
   color: white;
-  min-height: 100%;
+}
+body{
+  background: var(--color__bg);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+section{
+  max-width: 100%;
+  padding: 1em 2em;
 }
 
+/* LAYOUT  */
+
+.full-height {
+  height: 100vh;
+}
 
 /* TYPOGRAPHY */
 a {
@@ -44,7 +42,7 @@ li {
 }
 h1,h2,h3,h4,h5,h6{
   width: auto;
-  margin: 0 0 .8em 0;
+  margin: .8em 0;
 }
 .section__title {
   font-size: 2em;
@@ -74,7 +72,7 @@ h1,h2,h3,h4,h5,h6{
   } */
 }
 /* Tablet */
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
   body{
     font-size: 16px;
   }

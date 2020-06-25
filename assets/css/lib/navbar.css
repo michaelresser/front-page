@@ -1,13 +1,14 @@
 /* NAVBAR */
 .main-nav {
-  background-color: none;  
-  }
+  background-color: none;
+  width: 100%;        
+}
 .nav-items {
-  padding: 1em 1em 0 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1em;
   color: white;
 }
 .nav-items__home {
