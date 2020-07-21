@@ -22,7 +22,10 @@
   );
   border-radius: 10px;
   pointer-events: auto; 
+
 }
+
+
 
 @media screen and (max-width: 480px){
 	.projects__items{
