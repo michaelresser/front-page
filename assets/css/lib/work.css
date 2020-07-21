@@ -1,5 +1,6 @@
 /* WORK SECTION */
 .work {
+  min-height: 60%;
   background-color: black;
   text-align: center;
   display: flex;
@@ -8,9 +9,7 @@
   align-items: center;
   color: white;
 }
-.work__intro {
-  padding: 0 2em;
-}
+
 
 
 /* Media Queries */
