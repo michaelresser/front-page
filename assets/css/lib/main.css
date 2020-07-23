@@ -1,7 +1,7 @@
 /* VARIABLES */
 :root{
   --color__bg: #000000;
-  --color__primary:  #f89e00;
+  --color__primary: #f89e00;
 }
 
 /* DOCUMENT */
@@ -9,32 +9,28 @@ html {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   letter-spacing: 1.5px;
   scroll-behavior: smooth;  
-  
   box-sizing: border-box;
   background: none;
-  color: white;
+  width: 100vw;
 }
-
-/* ELEMENTS */
 body{
   background: black;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-content: center;  
+  font-size: 12px;
+  width: 100vw; 
+
 }
 section{
-  max-width: 100%;
   padding: 1em 2em;
 }
-
 /* LAYOUT  */
-
-.full-height {
+.mobile-height{
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
 }
-
 /* TYPOGRAPHY */
 a {
   text-decoration: none;
@@ -44,44 +40,5 @@ li {
   list-style-type: none;
 }
 h1,h2,h3,h4,h5,h6{
-  width: auto;
-  margin: .8em 0;
+  margin: .5em 0;
 }
-/* Typography Classes */
-
-.section__title {
-  font-size: 2em;
-  font-weight: 500;
-  letter-spacing: 4px;
-}
-.section__title::after {
-  content: attr(data-end);
-  color: #f89e00;
-}
-.content{
-  font-size: 1em;
-  letter-spacing: 2px;
-  line-height: 1.25em;
-}
-
-/* Media Queries */
-/* Phone */
-@media screen and (max-width: 480px){
-  body{
-    font-size: 10px;
-  }
-  .title {
-    margin-top: 0;
-    font-weight: 500;
-    letter-spacing: 2px;
-  }
-
-
-/* Tablet */
-@media screen and (min-width: 1024px){
-  body{
-    font-size: 16px;
-  }
-}
-
-

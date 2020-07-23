@@ -16,6 +16,8 @@ window.mobileCheck = function () {
 
 if (window.mobileCheck){
   fixMobile100vh();
+  
+
 }
 
 /* project__modal controllers */

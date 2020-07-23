@@ -1,0 +1,52 @@
+/* typpography styles */
+.title {
+  font-size: 1.75em;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.title::after {
+  content: attr(data-end);
+  color: #f89e00;
+}
+.headline {
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  line-height: 1.5em;
+  font-weight: bolder;
+}
+.bold {
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+.content {
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 1600px){
+  body{
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1440px){
+  body{
+    font-size: 1.325em;
+  }
+}
+
+@media screen and (max-width:1024px){
+  body{
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 480px){
+  body{
+      font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 375px){
+  body{
+      font-size: .75em;
+  }
+}
+

@@ -1,6 +1,6 @@
 /* WORK SECTION */
 .work {
-  min-height: 60%;
+  min-height: 60vh;
   background-color: black;
   text-align: center;
   display: flex;
@@ -8,16 +8,4 @@
   justify-content: flex-start;
   align-items: center;
   color: white;
-}
-
-
-
-/* Media Queries */
-/* Phone */
-@media screen and (max-width: 480px){
-  .work
-}
-/* Tablet */
-@media screen and (max-width: 1024px){
-  
 }
