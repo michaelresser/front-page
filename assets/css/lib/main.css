@@ -7,6 +7,7 @@
 /* DOCUMENT */
 html {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 21px;
   letter-spacing: 1.5px;
   scroll-behavior: smooth;  
   box-sizing: border-box;
@@ -19,7 +20,6 @@ body{
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-content: center;  
-  font-size: 12px;
   width: 100vw; 
 
 }
