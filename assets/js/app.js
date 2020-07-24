@@ -28,9 +28,9 @@ const handleProjectModal = (e) => {
   const elements = {
     modal: document.querySelector('.projects__modal'),
     modal__close: document.querySelector('.modal__close'),
-    title: document.querySelector('.showcase__title'),
-    showcase__img: document.querySelector('.showcase__img'),
-    description: document.querySelector('.showcase__description'),
+    title: document.querySelector('.info__title'),
+    modal__img: document.querySelector('.image__main'),
+    description: document.querySelector('.info__description'),
     view__site: document.querySelector('.view__site')
   }
   const data = JSON.parse(project.getAttribute('data-content'));
@@ -44,16 +44,15 @@ const handleProjectModal = (e) => {
   //customize modal info based on ,project data
   elements.title.innerHTML = data.title;
   elements.description.innerHTML = data.description;
-  elements.showcase__img.setAttribute('style', `background: url(${data.images[0].src}) center / cover`);
+  elements.modal__img.setAttribute('src', `${data.images[0]}`);
   elements.view__site.setAttribute('href', data.site_url)
 }
 
 
 // add onclick handlers to all .project__item elements 
   const projects__list = document.querySelector('.projects__list');
-  console.log(typeof projects__list);
   projects__list.querySelectorAll('.projects__item').forEach(item => item.addEventListener('click', (e) => {
-    console.log('handleProjectModal');
+    console.log('handleProjectModal:' + e.target);
     handleProjectModal(e)
   }));
 
