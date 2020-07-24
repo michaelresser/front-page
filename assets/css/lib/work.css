@@ -1,11 +1,32 @@
 /* WORK SECTION */
 .work {
-  min-height: 60vh;
+  min-height: 70vh;
   background-color: black;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   color: white;
 }
+.work__social-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  margin: auto 0 1em 0;
+}
+.social__icon{
+  width: 4em;
+  height: 4em; 
+  color: white;
+  margin: 0 .5em;
+}
+.social__icon:hover{
+  color: #f89e00; 
+} 
+
+.footer__copyright {
+  text-align: center;
+  color: white;
+}
+

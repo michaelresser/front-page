@@ -3,23 +3,3 @@
   background: black;
 }
 
-.footer__social-media {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-content: center;
-}
-.social-media__list {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: 0;
-}
-.social-media__item {
-  color: white;
-  margin-right: 1rem;
-}
-
-.footer__copyright {
-  text-align: center;
-  color: white;
-}
