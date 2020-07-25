@@ -1,6 +1,6 @@
 .contact {
   width: 100%;
-  min-height: 40vh; 
+  margin-top: auto;
 }
 .contact__bg {
   display: flex;
@@ -21,14 +21,13 @@
   align-items: center;
   flex: 1 1 350px;
   text-shadow: 0px 2px 5px #333;
-  padding: 1em;
+  padding: 0 .5em
 }
 .contact__title {
   text-shadow: 0px 2px 5px #333;
   color: #f89e00;
 }
 .contact__link {
-  font-size: 2em;
   text-align: center;
   font-weight: 500;
 }

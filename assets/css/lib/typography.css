@@ -1,4 +1,14 @@
 /* typpography styles */
+.section-title{
+  font-size: 1.75em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-top: 0;
+}
+.section-title::after {
+  content: attr(data-end);
+  color: #f89e00;
+}
 .nav-title {
   font-size: 1.75em;
   font-weight: 500;
@@ -9,17 +19,7 @@
   content: attr(data-end);
   color: #f89e00;
 }
-.section-title{
-  font-size: 2em;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-.section-title::after {
-  content: attr(data-end);
-  color: #f89e00;
-}
 .headline {
-  font-size: 1.25em;
   letter-spacing: 3px;
   line-height: 1.5em;
   font-weight: bolder;

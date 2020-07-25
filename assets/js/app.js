@@ -31,11 +31,14 @@ const handleProjectModal = (e) => {
     title: document.querySelector('.info__title'),
     modal__img: document.querySelector('.image__main'),
     description: document.querySelector('.info__description'),
-    view__site: document.querySelector('.view__site')
+    view__site: document.querySelector('.view__site'),
+    project__data: project.getAttribute('data-content') 
   }
-  const data = JSON.parse(project.getAttribute('data-content'));
+  console.log(elements.project__data);
+  const data = JSON.parse(elements.project__data);
   console.log(elements);
   console.log(data);
+
 
   // open modal
   elements.modal.style.top = 0;
