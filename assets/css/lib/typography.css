@@ -13,16 +13,7 @@
   content: attr(data-end);
   color: #f89e00;
 }
-.nav-title {
-  font-size: 1.75em;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin:.5em
-}
-.nav-title::after {
-  content: attr(data-end);
-  color: #f89e00;
-}
+
 .headline {
   font-size: 1.25em;
   letter-spacing: 3px;
