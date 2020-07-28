@@ -6,24 +6,21 @@
   flex-direction: column;
   align-items: center;
   color: white;
-  min-height: 80vh;
+  margin: 1em 0 2em 0;
 }
-.social{
+.social {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
   margin-top: auto;
-  margin-bottom: 1em;
 }
-.social__icon{
+.social__icon {
   width: 4em;
-  height: 4em; 
+  height: 4em;
   color: white;
-  margin: 0 .5em;
+  margin: 1em;
 }
-.social__icon:hover{
-  color: #f89e00; 
-} 
-
-
+.social__icon:hover {
+  color: #f89e00;
+}

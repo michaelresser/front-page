@@ -23,30 +23,24 @@
 }
 
 /* SKILLS */
-.about__skills {
+.about__skills{
+	
 }
-.skills__title {
-}
-.skills__column {
+
+.skills__box {
 	display: flex;
 	flex-direction: column;
 }
-.skills__row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-.skills__row > h3, p {	
-	
-}
 .skills__category {
 	display: flex;
-	width:auto;
-	text-transform: uppercase;
-	color: #b95b1c;
+	text-transform: uppercase;	
 }
-.skills__list {
+.skills{
+	padding-left: 1em;
+}
+.skills > p{
 	display: flex;
-	
-	line-height: 2;
+	flex-flow: column;
+	margin-top: 0; 	
+	width:auto;
 }

@@ -1,4 +1,8 @@
 /* typpography styles */
+.big{
+  font-size: 2em;
+  
+}
 .section-title{
   font-size: 1.75em;
   font-weight: 500;
@@ -20,6 +24,7 @@
   color: #f89e00;
 }
 .headline {
+  font-size: 1.25em;
   letter-spacing: 3px;
   line-height: 1.5em;
   font-weight: bolder;
