@@ -1,10 +1,6 @@
 import SplashController from './lib/splash__controller.js';
+import MobileMenuController from './lib/mobileMenu__controller.js';
 import fixMobile100vh from './lib/fixMobile100vh.js';
-// import ProjectsModalController from './lib/projects_modal_controller.js';
-
-
-// initialize splash control animation function
-let splashController = new SplashController();
 
 /* MobileCheck true/false */
 window.mobileCheck = function () {
@@ -14,14 +10,21 @@ window.mobileCheck = function () {
   return isMobile;
 }
 
-if (window.mobileCheck){
+/* Events on Document Load */
+if (document.readyState === "interactive") {
+  console.log("doc loaded");
+  /* Initialize Controllers */
+  /* Splash Page Animation Controller */
+  const splashController = new SplashController();
+};
+
+
+
+
+/* 100vh Mobile Fix */
+if (window.mobileCheck) {
   fixMobile100vh();
-  
-
 }
-
-/* project__modal controllers */
-// const projectsModalController = new ProjectsModalController();
 
 const handleProjectModal = (e) => {
   const project = e.target;
@@ -32,7 +35,7 @@ const handleProjectModal = (e) => {
     modal__img: document.querySelector('.image__main'),
     description: document.querySelector('.info__description'),
     view__site: document.querySelector('.view__site'),
-    project__data: project.getAttribute('data-content') 
+    project__data: project.getAttribute('data-content')
   }
   console.log(elements.project__data);
   const data = JSON.parse(elements.project__data);
@@ -53,10 +56,8 @@ const handleProjectModal = (e) => {
 
 
 // add onclick handlers to all .project__item elements 
-  const projects__list = document.querySelector('.projects__list');
-  projects__list.querySelectorAll('.projects__item').forEach(item => item.addEventListener('click', (e) => {
-    console.log('handleProjectModal:' + e.target);
-    handleProjectModal(e)
-  }));
-
-
+const projects__list = document.querySelector('.projects__list');
+projects__list.querySelectorAll('.projects__item').forEach(item => item.addEventListener('click', (e) => {
+  console.log('handleProjectModal:' + e.target);
+  handleProjectModal(e)
+}));
