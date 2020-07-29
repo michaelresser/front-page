@@ -1,28 +1,28 @@
-<h1>Personal Portfolio Page Project</h1>
+<h1>Personal Portfolio Page</h1>
 <h2> README </h2>
 
 <h3>Overview</h3>
 
-This repo is a self-assigned project to review and 'clone' a portfolio site of Taylor Ho, a UI designer/developer whose work I respect. 
+This is the repo for my personal protfolio of web dev work. Hand Coded using HTML, CSS, Vanilla JS, and a touch of JQuery (for a plugin).
+The design ws inspired by the portfolio site of Taylor Ho, a UI designer/developer of of CA. I really liked his simple, elegant minimalist UI and wasnted to see if i could reconstruct his splash page graphic. It evolved into my own interpretation from there.  
 
 Taylor's OG site & work may be viewed here: www.taylorkmho.com 
 
-I chose Taylor's site because of its simple, yet intelligent, single-page layout, and subtle use of animated modals to transition between topical areas. 
-
-Under the hood he uses a smart simple file structore to arrage style sheets, JS modules, and 3rd party libraries. 
-
-I was particularly inspired by the method of bundling all the animation JS into a simple class, which is then instantiated and called on the main app, for clean-easy to follow JS animations. 
-
-This projecti exposed me to using Sass for SUPER simple CSS & WaypointsJS + the Web Animations API syntax for easy and awesome scroll-triggered animations. 
-
+<h3>Reflections</h3>
+<ul>
+<li>Hand Coding a Responsive Layout is maddening. I have so much more respect for responsive libraries like Bootstrap, depsite their individual drawbacks.</li> 
+<li>I was particularly inspired by the method of bundling all the animation JS into a simple class, which is then instantiated and called on the main app, for clean-easy to follow JS animations.</li> 
+<li> WaypointsJS + the Web Animations API syntax for easy and awesome scroll-triggered animations.</li> 
+</ul>
 <h3>Stack</h3>
 <ul>
-  <li> HTML5 | CSS3 (Sass) | JS </li>
-  <li> Jquery </li>
+  <li> HTML5 | CSS3 (Sass) | JS | Jquery </li>
+</ul>
+<ul>
   <li> WaypointsJS </li>
   <li> Lost Grid</li>
-  <li> </li>
-  
+  <li> Magnific Popup</li>
+  <li> Wallop Slider</li>
 </ul>
 
 Thanks for Looking! 
