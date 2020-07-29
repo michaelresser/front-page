@@ -15,9 +15,11 @@ Taylor's OG site & work may be viewed here: www.taylorkmho.com
 <li> WaypointsJS + the Web Animations API syntax for easy and awesome scroll-triggered animations.</li> 
 </ul>
 <h3>Stack</h3>
+<h4>Languages</h4>
 <ul>
   <li> HTML5 | CSS3 (Sass) | JS | Jquery </li>
 </ul>
+<h4>Libraries</h4>
 <ul>
   <li> WaypointsJS </li>
   <li> Lost Grid</li>
