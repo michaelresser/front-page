@@ -1,16 +1,18 @@
-.splash{  
+.splash {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   color: white;
-  height: 90vh;
+  width: 100%;
+  height: 100vh;
 }
 .splash__title {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1 1 auto;
+  text-align: center;
   font-size: 1.5em;
   font-weight: 700;
   padding: 0 2em;
@@ -18,12 +20,15 @@
 }
 .splash__arrow {
   display: flex;
-  align-self: center;
   flex-direction: row;
   justify-content: center;
-  font-size: 5em;
+  font-size: 3em;
+  margin-bottom: 0.5em;
   filter: drop-shadow(0px 2px 5px #333);
   animation: arrow-fade-in-up 1.5s infinite;
+}
+.splash__arrow:hover {
+  color: var(--color__primary);
 }
 .splash__bg {
   position: absolute;
@@ -36,44 +41,35 @@
   animation: bgFrames 800ms steps(8) infinite;
   display: flex;
   justify-content: center;
-  align-content: flex-end;  
+  align-content: flex-end;
 }
 .splash__sillhouette {
+  z-index: -2;
   height: 100%;
   width: auto;
+  overflow-x: hidden;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .splash__title {
     font-size: 1.25em;
     padding: 0 2em;
   }
 }
-@media screen and (max-width: 768px){
-  .splash__sillhouette{
+@media screen and (max-width: 800px) {
+  .splash__sillhouette {
     position: absolute;
     right: 0;
-    top:0;
-    
   }
 }
-@media screen and (max-width: 600px){
-  .splash__sillhouette{
-    position: absolute;
-    right: 0;
-    top:0;
-    
-  }
+@media screen and (max-width: 600px) {
   .splash__title {
     font-size: 1.1em;
     padding: 0 2em;
   }
 }
-@media screen and (max-width: 425px){
-  .splash__sillhouette{
-    
-  }
+@media screen and (max-width: 425px) {
   .splash__title {
     font-size: 1em;
-    padding: 0 2em;    
+    padding: 0 2em;
   }
 }

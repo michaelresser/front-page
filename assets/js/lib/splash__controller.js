@@ -6,12 +6,16 @@ export default class SplashController {
                 silhouette: document.querySelector('.splash__sillhouette'),
                 title: document.querySelector('.splash__title'),
                 bg: document.querySelector('.splash__bg'),
-                arrow: document.querySelector('.splash__arrow')
+                arrow: document.querySelector('.splash__arrow').parentNode
             },
             projects: {
                 container: document.querySelector('.work'),
                 title: document.querySelector('.work__intro'),
                 list: document.querySelector('.projects__list')
+            },
+            navbar: {
+                navToggle: document.querySelector('.nav-toggle').children[0],
+                navItems: document.querySelector('.nav-items'),
             }
         },
             this.animSettings = animSettings ? animSettings : {
@@ -30,7 +34,8 @@ export default class SplashController {
         let waypoint = new Waypoint({
             element: this.elements.projects.title,
             handler: (direction) => {
-                if (direction === 'down') {
+                if (direction === 'down') {                    
+                    this.hideNavbarContent()
                     this.hideSplashContent()
                     this.showProjectsContent()
                 } else {
@@ -43,6 +48,11 @@ export default class SplashController {
     }
 
     // Show Hide Methods written using WebAnimationsAPI syntax
+    hideNavbarContent(){
+        if(this.elements.navbar.navItems.style.display === 'flex'){
+            this.elements.navbar.navItems.style.display = 'none';
+        }
+    }
     hideSplashContent() {
         this.animSettings.delay = 0
         this.elements.splash.silhouette.animate([

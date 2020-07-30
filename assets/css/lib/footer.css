@@ -1,6 +1,7 @@
 .footer__nav{
     display: flex;
     justify-content: space-between; 
-    padding: 0 2em;   
+    padding: 0 2em; 
+    font-size: 1em;  
 }
 
