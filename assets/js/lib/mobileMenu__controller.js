@@ -1,7 +1,7 @@
 const mobileMenuController = () => {
     /* query all elemnts for reference */
     const elements = {
-        navToggle: document.querySelector('.nav-toggle').children[0],
+        navToggle: document.querySelector('.nav-toggle'),
         navItems: document.querySelector('.nav-items'),
         splashTitle: document.querySelector('.splash__title')
     }
@@ -33,17 +33,17 @@ const mobileMenuController = () => {
             { opacity: 0, offset: 1 }
         ], animSettings);
     }
+
     /* Logic */
-    if (elements.navItems.style.display === "") {
-        elements.navToggle.setAttribute("data-icon", "fa-solid:times");    
+    if (elements.navItems.style.display === "") {         
         fadeTitleOut();
         elements.navItems.style.display = 'flex';
-        console.log(elements.navToggle.getAttribute('data-icon'));
+        elements.navToggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:times" data-inline="false"></span>';   
     } else {
-        elements.navToggle.setAttribute('data-icon', 'fa-solid:bars');
+         
         elements.navItems.style.display = "";
         fadeTitleIn()
-        console.log(elements.navToggle.getAttribute('data-icon'));
+        elements.navToggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:bars" data-inline="false"></span>';  
     };
 
 }

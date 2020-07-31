@@ -8,13 +8,14 @@ export default class SplashController {
                 bg: document.querySelector('.splash__bg'),
                 arrow: document.querySelector('.splash__arrow').parentNode
             },
-            projects: {
+            work: {
                 container: document.querySelector('.work'),
                 title: document.querySelector('.work__intro'),
-                list: document.querySelector('.projects__list')
+                list: document.querySelector('.projects__list'),
+                social: document.querySelector('.social')
             },
             navbar: {
-                navToggle: document.querySelector('.nav-toggle').children[0],
+                navToggle: document.querySelector('.nav-toggle'),
                 navItems: document.querySelector('.nav-items'),
             }
         },
@@ -28,11 +29,11 @@ export default class SplashController {
             }
 
         // Set Initial State of Projects section
-        this.elements.projects.title.style.opacity = 0;
-        this.elements.projects.list.style.opacity = 0;
+        this.elements.work.title.style.opacity = 0;
+        this.elements.work.list.style.opacity = 0;
 
         let waypoint = new Waypoint({
-            element: this.elements.projects.title,
+            element: this.elements.work.title,
             handler: (direction) => {
                 if (direction === 'down') {                    
                     this.hideNavbarContent()
@@ -51,6 +52,7 @@ export default class SplashController {
     hideNavbarContent(){
         if(this.elements.navbar.navItems.style.display === 'flex'){
             this.elements.navbar.navItems.style.display = 'none';
+            elements.navToggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:bars" data-inline="false"></span>';   
         }
     }
     hideSplashContent() {
@@ -72,6 +74,9 @@ export default class SplashController {
             { opacity: 0, offset: 1 }
         ], this.animSettings)
         this.elements.splash.arrow.style.pointerEvents = 'none'
+    }
+    scrollToWork(){
+
     }
     showSplashContent() {
         this.animSettings.delay = 0
@@ -95,23 +100,23 @@ export default class SplashController {
     }
     showProjectsContent() {
         this.animSettings.delay = 300
-        this.elements.projects.title.animate([
+        this.elements.work.title.animate([
             { transform: 'translateY(0px)', opacity: .5, offset: 0 },
             { transform: 'translateY(0px)', opacity: 1, offset: 1 }
         ], this.animSettings)
         this.animSettings.delay = 300
-        this.elements.projects.list.animate([
+        this.elements.work.list.animate([
             { transform: 'translateY(0px)', opacity: 0, offset: 0 },
             { transform: 'translateY(0px)', opacity: 1, offset: 1 }
         ], this.animSettings)
     }
     hideProjectsContent() {
         this.animSettings.delay = 0
-        this.elements.projects.title.animate([
+        this.elements.work.title.animate([
             { transform: 'translateY(0px)', opacity: 1, offset: 0 },
             { transform: 'translateY(40px)', opacity: 0, offset: 1 }
         ], this.animSettings)
-        this.elements.projects.list.animate([
+        this.elements.work.list.animate([
             { transform: 'translateY(40px)', opacity: 1, offset: 0 },
             { transform: 'translateY(0px)', opacity: 0, offset: 1 }
         ], this.animSettings)

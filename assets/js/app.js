@@ -27,6 +27,7 @@ if (document.readyState === "interactive") {
   const splashController = new SplashController();
   // Mobile Menu Controller
   document.querySelector('.nav-toggle').addEventListener('click', () => {
+  
     mobileMenuController();
   });
 };
