@@ -37,12 +37,11 @@ if (document.readyState === "interactive") {
 const handleProjectModal = (e) => {
   const project = e.target;
   const elements = {
-    modal: document.querySelector('.projects__modal'),
-    modal__close: document.querySelector('.modal__close'),
+    modal: document.querySelector('.modal'),
     title: document.querySelector('.info__title'),
     modal__img: document.querySelector('.image__main'),
     description: document.querySelector('.info__description'),
-    view__site: document.querySelector('.view__site'),
+    view__site: document.querySelector('.view-site'),
     project__data: project.getAttribute('data-content')
   }
   console.log(elements.project__data);
@@ -50,12 +49,10 @@ const handleProjectModal = (e) => {
   console.log(elements);
   console.log(data);
 
+  // Open modal
+  elements.modal.style.display = 'block';
 
-  // open modal
-  elements.modal.style.top = 0;
-  // close modal
-  elements.modal.addEventListener('click', () => elements.modal.style.top = "100vh");
-  //customize modal info based on ,project data
+  //Set modal Data from project Button
   elements.title.innerHTML = data.title;
   elements.description.innerHTML = data.description;
   elements.modal__img.setAttribute('src', `${data.images[0]}`);

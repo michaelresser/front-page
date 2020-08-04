@@ -1,22 +1,20 @@
 .projects {
   width: 100%;
   display: flex;
-  flex-flow: column;
-  align-content: center;
-  flex: 0 0 auto;
-}
-.projects__list {
-  display: flex;
-  flex-direction: row wrap;
-  justify-content: center;
-}
-.projects__item {
-  flex: 1 1 32vw;
-  height: 300px;
-  margin: 0.5em;
-  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  flex: 1 1 50%;
+}
+
+.projects__item {
+  margin:.5em;
+  display: inline-flex;
+  flex: 0 0 300px;
+  
+  height: 240px;
+  justify-content: center;
+  align-items: center; 
   background: linear-gradient(
     143deg,
     rgba(236, 103, 0, 1) 0%,
@@ -29,7 +27,9 @@
 }
 
 @media screen and (max-width: 480px) {
-  .projects__items {
-    width: 90%;
+  .projects{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    overflow-x: scroll;
   }
 }

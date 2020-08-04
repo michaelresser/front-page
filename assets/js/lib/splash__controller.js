@@ -11,7 +11,7 @@ export default class SplashController {
             work: {
                 container: document.querySelector('.work'),
                 title: document.querySelector('.work__intro'),
-                list: document.querySelector('.projects__list'),
+                list: document.querySelector('.projects'),
                 social: document.querySelector('.social')
             },
             navbar: {
