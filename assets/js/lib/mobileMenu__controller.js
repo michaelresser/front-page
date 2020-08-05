@@ -1,52 +1,82 @@
 const mobileMenuController = () => {
     /* query all elemnts for reference */
     const elements = {
-        navToggle: document.querySelector('.nav-toggle'),
-        navItems: document.querySelector('.nav-items'),
-        splashTitle: document.querySelector('.splash__title')
+        nav: {
+            main: document.querySelector('.main-nav'),
+            toggle: document.querySelector('.nav-toggle'),
+            items: document.querySelector('.nav-items')
+        },
+        splash: {
+            title: document.querySelector('.splash__title')
+        }
     }
-    const animSettings = {
-        duration: 700,
-        easing: 'ease-out',
-        delay: 0,
-        iterations: 1,
-        direction: 'normal',
-        fill: 'forwards'
-    }
-    const fadeTitleOut = () => {
-        elements.splashTitle.animate([
+
+    const menuDown = () => {
+        elements.splash.title.animate([
             { opacity: 1, offset: 0 },
             { opacity: 0, offset: 1 }
-        ], animSettings);
-        elements.navItems.animate([
+        ], {
+            duration: 100,
+            easing: 'ease-out',
+            delay: 0,
+            iterations: 1,
+            direction: 'normal',
+            fill: 'forwards'
+        }).onfinish = () => {
+            elements.splash.title.style.display = 'none';
+            elements.nav.main.style.height = '100vh';
+            elements.nav.items.style.display = 'flex';
+            elements.nav.toggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:times" data-inline="false"></span>';
+        }
+        elements.nav.items.animate([
             { opacity: 0, offset: 0 },
             { opacity: 1, offset: 1 }
-        ], animSettings);
+        ], {
+            duration: 700,
+            easing: 'ease-out',
+            delay: 0,
+            iterations: 1,
+            direction: 'normal',
+            fill: 'forwards'
+        });
     }
-    const fadeTitleIn = () => {
-        elements.splashTitle.animate([
-            { opacity: 0, offset: 0 },
-            { opacity: 1, offset: 1 },
-        ], animSettings);
-        elements.navItems.animate([
+    const menuUp = () => {
+        elements.splash.title.style.display = "flex";
+        elements.nav.items.animate([
             { opacity: 1, offset: 0 },
             { opacity: 0, offset: 1 }
-        ], animSettings);
+        ], {
+            duration: 100,
+            easing: 'ease-out',
+            delay: 0,
+            iterations: 1,
+            direction: 'normal',
+            fill: 'forwards'
+        }).onfinish = () => {
+            elements.nav.toggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:bars" data-inline="false"></span>'
+            elements.nav.main.style.height = 'auto';
+            elements.nav.items.style.display = "";
+        };
+        elements.splash.title.animate([
+            { opacity: 0, offset: 0 },
+            { opacity: 1, offset: 1 },
+        ], {
+            duration: 700,
+            easing: 'ease-out',
+            delay: 0,
+            iterations: 1,
+            direction: 'normal',
+            fill: 'forwards'
+        });
     }
 
     /* Logic */
-    if (elements.navItems.style.display === "") {         
-        fadeTitleOut();
-        elements.navItems.style.display = 'flex';
-        elements.navToggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:times" data-inline="false"></span>';   
+    if (elements.nav.items.style.display === "") {
+        menuDown();
     } else {
-         
-        elements.navItems.style.display = "";
-        fadeTitleIn()
-        elements.navToggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:bars" data-inline="false"></span>';  
+        menuUp();
     };
 
 }
-
 
 export default mobileMenuController;  

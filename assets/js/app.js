@@ -27,7 +27,6 @@ if (document.readyState === "interactive") {
   const splashController = new SplashController();
   // Mobile Menu Controller
   document.querySelector('.nav-toggle').addEventListener('click', () => {
-  
     mobileMenuController();
   });
 };
@@ -61,8 +60,8 @@ const handleProjectModal = (e) => {
 
 
 // add onclick handlers to all .project__item elements 
-const projects__list = document.querySelector('.projects__list');
+/* const projects__list = document.querySelector('.projects__list');
 projects__list.querySelectorAll('.projects__item').forEach(item => item.addEventListener('click', (e) => {
   console.log('handleProjectModal:' + e.target);
   handleProjectModal(e)
-}));
+})); */

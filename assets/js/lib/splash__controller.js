@@ -35,7 +35,7 @@ export default class SplashController {
         let waypoint = new Waypoint({
             element: this.elements.work.title,
             handler: (direction) => {
-                if (direction === 'down') {                    
+                if (direction === 'down') {
                     this.hideNavbarContent()
                     this.hideSplashContent()
                     this.showProjectsContent()
@@ -49,10 +49,10 @@ export default class SplashController {
     }
 
     // Show Hide Methods written using WebAnimationsAPI syntax
-    hideNavbarContent(){
-        if(this.elements.navbar.navItems.style.display === 'flex'){
-            this.elements.navbar.navItems.style.display = 'none';
-            elements.navToggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:bars" data-inline="false"></span>';   
+    hideNavbarContent() {
+        if (this.elements.navbar.navItems.style.display === 'flex') {
+            this.elements.navbar.navItems.style.display = '';
+            this.elements.navbar.navToggle.innerHTML = '<span class="iconify nav-icon" data-icon="fa-solid:bars" data-inline="false"></span>';
         }
     }
     hideSplashContent() {
@@ -61,10 +61,12 @@ export default class SplashController {
             { transform: 'scale(1)', opacity: 1, offset: 0 },
             { transform: 'scale(.95)', opacity: 0, offset: 1 }
         ], this.animSettings)
-        this.elements.splash.title.animate([
-            { opacity: 1, offset: 0 },
-            { opacity: 0, offset: 1 }
-        ], this.animSettings)
+        if (this.elements.splash.title.style.opacity = 1) {
+            this.elements.splash.title.animate([
+                { opacity: 1, offset: 0 },
+                { opacity: 0, offset: 1 }
+            ], this.animSettings)
+        }
         this.elements.splash.bg.animate([
             { opacity: 1, offset: 0 },
             { opacity: 0, offset: 1 }
@@ -75,7 +77,7 @@ export default class SplashController {
         ], this.animSettings)
         this.elements.splash.arrow.style.pointerEvents = 'none'
     }
-    scrollToWork(){
+    scrollToWork() {
 
     }
     showSplashContent() {
