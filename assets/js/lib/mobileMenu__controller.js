@@ -8,7 +8,8 @@ const mobileMenuController = () => {
         },
         splash: {
             title: document.querySelector('.splash__title')
-        }
+        },
+        
     }
 
     const menuDown = () => {

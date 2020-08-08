@@ -103,9 +103,6 @@
 }
 /* Mobile */
 @media screen and (max-width: 500px) {
-  .nav-home {
-    /* flex-direction: column; */
-  }
   .nav-title{
     font-size: 1.5em;
   }
